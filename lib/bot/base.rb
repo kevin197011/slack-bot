@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # class
 class SlackBot < SlackRubyBot::Bot
   command 'version' do |client, data, _match|

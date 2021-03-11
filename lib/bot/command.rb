@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # class
 class SlackBot < SlackRubyBot::Bot
   command 'ping' do |client, data, _match|
