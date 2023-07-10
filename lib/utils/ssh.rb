@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # module DevOpsBot
 module DevOpsBot
   # module Utils
