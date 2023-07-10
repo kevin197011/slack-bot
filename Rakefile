@@ -1,19 +1,17 @@
 # frozen_string_literal: true
 
-require "standard/rake"
-# rake standard
-# rake standard:fix
+task default: :run
 
 task :fmt do
-  sh "rubocop -A"
+  sh 'rubocop -A'
 end
 
-desc "push task"
 task :push do
-  sh <<~EOF
-    git add .
-    git commit -m "update."
-    git push -u origin main
-  EOF
-  system "open https://github.com/kevin197011/slack-bot"
+  sh 'git add .'
+  sh 'git commit -m "update."'
+  sh 'git push -u origin main'
+end
+
+task :run do
+  sh 'ruby bot.rb'
 end

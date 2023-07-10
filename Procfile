@@ -1,1 +1,1 @@
-console: bundle exec ruby marketbot.rb
+console: bundle exec ruby bot.rb
