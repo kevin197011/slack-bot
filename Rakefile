@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-task default: :run
+task default: :push
 
 task :fmt do
   sh 'rubocop -A'

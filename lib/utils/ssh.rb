@@ -4,8 +4,8 @@ module DevOpsBot
   module Utils
     # class SSH
     class SSH
-      def run
-        puts 'run'
+      def self.run(cmd)
+        puts "run #{cmd}"
       end
     end
   end
